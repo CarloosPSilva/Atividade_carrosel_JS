@@ -1,0 +1,544 @@
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+div > h2{
+    font-family: 'Hind', sans-serif;
+    margin: 0px;
+    padding-top: 5px;
+    font-size:5vw;
+}
+h2{
+    margin: 0px;
+    padding-top: 5px; 
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+}
+div > a{
+    color: #000;
+    font-family: 'Hind', sans-serif;
+}
+
+div > h1{
+   
+    margin: 0px;
+    text-align: center;
+    color: #222;
+    font-family: 'Hind', sans-serif;
+
+    font-size: 1.9em;
+    display: block;
+    font-size:10vw;
+
+    
+}
+
+a:hover {
+
+    background: rgba(0, 0, 0, 0.05);
+
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    font-size: 1.2rem;
+    width: 100%;
+
+
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+h2 > p {
+    
+    width:  inherit;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 0px;
+    display: block;
+    padding-top: 5px;
+   
+}
+
+.botao{
+    padding-top: 5px;
+    
+    
+    
+
+}  
+.btn{
+    background-color: #f8db1c;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #000;
+    width: 90px;
+    font-weight: bolder;
+    
+    
+    
+}
+button:hover{
+    background-color: rgb(255, 230, 0);
+    cursor: pointer;
+}
+
+div  img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+   
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 10px;
+    max-width: 800px;
+    
+}
+
+.flex > div{
+    flex: 1 1 200px;
+     padding: 10px;
+}
+.flex >.banner > img{
+   
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
+    max-width: 800px;
+
+
+}
+
+#rodape div{
+    background: #222;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    bottom: 0px;
+    position: relative;
+}
+
+@media (max-width: 320px){
+    #btn-mobile{
+        display: block;
+    }
+    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+        
+    
+    }
+    
+    #nav.active #menu{
+     visibility: visible; 
+     height: calc(100vh - 70px);
+     overflow: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 2, 2, 0.05);
+        color: #000;
+    }
+    
+    #btn-mobile{
+        display: flex;
+        padding:  .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #fff;
+    
+    }
+    
+    #menuLado{
+        width: 20px;
+        border-top: 2px solid;
+    
+    
+    }
+    #menuLado::after, #menuLado::before{
+        content: '';
+        display: block;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+    
+    }
+    
+    p {
+        
+        width:  150px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+        
+    
+    
+    
+    
+    img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+       
+        
+    }
+        
+    .flex{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin: 0 auto;
+        padding-top: 10px;
+        min-width: 300px;
+    }
+    
+    .flex > div{
+        flex: 1 1 200px;
+         padding: 10px;
+    }
+    
+    #rodape {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 60px;
+      
+        
+            
+    
+        }
+        .rodape{
+            padding-top: 10px;
+            text-align: right;
+            padding-right: 40px;
+            background: #222;
+            display: flex; 
+             width: 100%;
+        }
+        #rodape p {
+            position: relative;
+            text-align: center;
+        }
+        .Crodape{
+        
+            background-color: #222;
+            width: 100%;
+            margin: 0px;
+            height: 50px;
+            padding: 0px;
+           
+    
+            
+          
+        }
+    
+    }
+
+
+    @media (max-width: 720px){
+        #btn-mobile{
+            display: block;
+        }
+        
+        #menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            right: 0px;
+            background: #e7e7e7;
+            height: 0px;
+            transition: .6s;
+            z-index: 1000;
+            visibility: hidden;
+            overflow-y: hidden;
+            
+            
+        
+        }
+        
+        #nav.active #menu{
+         visibility: visible; 
+         height: calc(100vh - 70px);
+         overflow: auto;
+        }
+        #menu a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid rgba(255, 2, 2, 0.05);
+            color: #000;
+        }
+        
+        #btn-mobile{
+            display: flex;
+            padding:  .5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: .5rem;
+            color: #fff;
+        
+        }
+        
+        #menuLado{
+            width: 20px;
+            border-top: 2px solid;
+        
+        
+        }
+        #menuLado::after, #menuLado::before{
+            content: '';
+            display: block;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+        
+        }
+        
+        p {
+            
+            width:  150px;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+            
+        
+        
+        
+        
+        img {
+            max-width: 100%;
+            display: block;
+            border-radius: 10px;
+           
+            
+        }
+            
+        .flex{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            margin: 0 auto;
+            padding-top: 10px;
+            min-width: 300px;
+        }
+        
+        .flex > div{
+            flex: 1 1 200px;
+             padding: 10px;
+        }
+        
+        #rodape {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 60px;
+          
+            
+                
+        
+            }
+            .rodape{
+                padding-top: 10px;
+                text-align: right;
+                padding-right: 40px;
+                background: #222;
+                display: flex; 
+                 width: 100%;
+            }
+            #rodape p {
+                position: relative;
+                text-align: center;
+            }
+            .Crodape{
+            
+                background-color: #222;
+                width: 100%;
+                margin: 0px;
+                height: 50px;
+                padding: 0px;
+               
+        
+                
+              
+            }
+        
+        }
+
+        @media (max-width: 1200px){
+            #btn-mobile{
+                display: block;
+            }
+            
+            #menu {
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 70px;
+                right: 0px;
+                background: #e7e7e7;
+                height: 0px;
+                transition: .6s;
+                z-index: 1000;
+                visibility: hidden;
+                overflow-y: hidden;
+                
+                
+            
+            }
+            
+            #nav.active #menu{
+             visibility: visible; 
+             height: calc(100vh - 70px);
+             overflow: auto;
+            }
+            #menu a {
+                padding: 1rem 0;
+                margin: 0 1rem;
+                border-bottom: 2px solid rgba(255, 2, 2, 0.05);
+                color: #000;
+            }
+            
+            #btn-mobile{
+                display: flex;
+                padding:  .5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: .5rem;
+                color: #fff;
+            
+            }
+            
+            #menuLado{
+                width: 20px;
+                border-top: 2px solid;
+            
+            
+            }
+            #menuLado::after, #menuLado::before{
+                content: '';
+                display: block;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+            
+            }
+            
+            p {
+                
+                width:  150px;
+                padding: 5px;
+                border-radius: 10px;
+                font-size: 15px;
+            }
+                
+            
+            
+            
+            
+            img {
+                max-width: 100%;
+                display: block;
+                border-radius: 10px;
+               
+                
+            }
+                
+            .flex{
+                display: flex;
+                flex-wrap: wrap-reverse;
+                margin: 0 auto;
+                padding-top: 10px;
+                min-width: 300px;
+            }
+            
+            .flex > div{
+                flex: 1 1 200px;
+                 padding: 10px;
+            }
+            
+            #rodape {
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+                height: 60px;
+              
+                
+                    
+            
+                }
+                .rodape{
+                    padding-top: 10px;
+                    text-align: right;
+                    padding-right: 40px;
+                    background: #222;
+                    display: flex; 
+                     width: 100%;
+                }
+                #rodape p {
+                    position: relative;
+                    text-align: center;
+                }
+                .Crodape{
+                
+                    background-color: #222;
+                    width: 100%;
+                    margin: 0px;
+                    height: 50px;
+                    padding: 0px;
+                   
+            
+                    
+                  
+                }
+            
+            }
